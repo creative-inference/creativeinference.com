@@ -92,29 +92,6 @@
         });
     }
 
-    // ---- Project Category Filter ----
-    var filterButtons = document.querySelectorAll('.filter-btn');
-    var projectCards = document.querySelectorAll('.project-card');
-
-    filterButtons.forEach(function (btn) {
-        btn.addEventListener('click', function () {
-            var filter = this.getAttribute('data-filter');
-
-            // Update active button
-            filterButtons.forEach(function (b) { b.classList.remove('active'); });
-            this.classList.add('active');
-
-            // Filter cards
-            projectCards.forEach(function (card) {
-                if (filter === 'all' || card.getAttribute('data-category') === filter) {
-                    card.classList.remove('hidden');
-                } else {
-                    card.classList.add('hidden');
-                }
-            });
-        });
-    });
-
     // ---- Auto-update Copyright Year ----
     var yearSpan = document.querySelector('.year');
     if (yearSpan) {
