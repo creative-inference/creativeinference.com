@@ -49,6 +49,7 @@
                     <li><a href="#about">About</a></li>
                     <li><a href="#capabilities">Capabilities</a></li>
                     <li><a href="#projects">Projects</a></li>
+                    <li><a href="#tech">Tech</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -76,7 +77,7 @@
         <div class="container">
             <div class="about-content animate-on-scroll">
                 <h2>Who We Are</h2>
-                <p>Creative Inference is an independent AI technology studio. We design, build, and ship products powered by artificial intelligence — from autonomous agents and natural language search to AI-driven curation and content generation. Every project ships to production.</p>
+                <p>Creative Inference is an independent AI technology studio. We design, build, and ship products powered by artificial intelligence — from autonomous agents and natural language search to AI-driven curation and content generation. Local directories go stale overnight; we build the agent pipelines, cloud infrastructure, and engagement layers that keep products fresh and ship them to production.</p>
             </div>
         </div>
     </section>
@@ -156,17 +157,162 @@
                         </div>
                         <div class="project-content">
                             <h3 class="project-title">BarDC</h3>
-                            <p class="project-description">AI-powered bar and club directory for Washington DC. 8 autonomous agents with Google Gemini for event detection, smart curation, and natural language search.</p>
+                            <p class="project-description">AI-powered bar and club directory for Washington, D.C. Autonomous Gemini agents crawl and structure venue data nightly on Google Cloud; Eleventy + Firebase deliver a fast public site with Bar Matey chat, ratings, and member features.</p>
                             <div class="project-tech">
                                 <span>Gemini</span>
                                 <span>AI Agents</span>
                                 <span>GCP</span>
-                                <span>NLP</span>
+                                <span>Firebase</span>
+                                <span>Eleventy</span>
+                                <span>Puppeteer</span>
+                                <span>NLP / Chat</span>
+                                <span>three.js</span>
                             </div>
                         </div>
                     </a>
                 </article>
 
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Tour Section -->
+    <section id="tech" class="tech-section">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2>Under the Hood: BarDC</h2>
+                <p>Happy hours change, events disappear, ratings drift — and editorial teams can't manually keep hundreds of bars current. Here's how Bar DC turns the messy open web into a nightlife guide that refreshes itself overnight.</p>
+            </div>
+
+            <!-- Stats -->
+            <div class="tech-stats">
+                <div class="stat animate-on-scroll">
+                    <span class="stat-number">15+</span>
+                    <span class="stat-label">Autonomous agents</span>
+                </div>
+                <div class="stat animate-on-scroll">
+                    <span class="stat-number">Gemini</span>
+                    <span class="stat-label">Reasoning &amp; generation</span>
+                </div>
+                <div class="stat animate-on-scroll">
+                    <span class="stat-number">Nightly</span>
+                    <span class="stat-label">Self-refreshing pipeline</span>
+                </div>
+                <div class="stat animate-on-scroll">
+                    <span class="stat-number">$0 idle</span>
+                    <span class="stat-label">Serverless, scale-to-zero</span>
+                </div>
+            </div>
+
+            <!-- Agent Pipeline -->
+            <div class="tech-block">
+                <h3 class="tech-block-title">The Agent Pipeline</h3>
+                <p class="tech-block-intro">Every night a fleet of specialized AI agents runs end to end. Each agent does one job well and hands off to the next — with a human-in-the-loop approval lane when the scrape is uncertain.</p>
+                <ol class="pipeline">
+                    <li class="pipeline-step animate-on-scroll">
+                        <span class="pipeline-num">01</span>
+                        <div class="pipeline-body">
+                            <h4>Crawl</h4>
+                            <p>A headless-Chrome agent visits each venue's website, walking up to 10 pages and storing the raw content.</p>
+                            <span class="pipeline-tech">Puppeteer</span>
+                        </div>
+                    </li>
+                    <li class="pipeline-step animate-on-scroll">
+                        <span class="pipeline-num">02</span>
+                        <div class="pipeline-body">
+                            <h4>Extract</h4>
+                            <p>Gemini reads the unstructured HTML and pulls out structured events, happy-hour specials, and social links.</p>
+                            <span class="pipeline-tech">Gemini</span>
+                        </div>
+                    </li>
+                    <li class="pipeline-step animate-on-scroll">
+                        <span class="pipeline-num">03</span>
+                        <div class="pipeline-body">
+                            <h4>Enrich</h4>
+                            <p>Google Places adds official ratings, hours, price levels, photos, and fresh reviews for every venue.</p>
+                            <span class="pipeline-tech">Places API</span>
+                        </div>
+                    </li>
+                    <li class="pipeline-step animate-on-scroll">
+                        <span class="pipeline-num">04</span>
+                        <div class="pipeline-body">
+                            <h4>Curate</h4>
+                            <p>More agents categorize venues against a master taxonomy and write structured, on-brand descriptions from real reviews.</p>
+                            <span class="pipeline-tech">Gemini</span>
+                        </div>
+                    </li>
+                    <li class="pipeline-step animate-on-scroll">
+                        <span class="pipeline-num">05</span>
+                        <div class="pipeline-body">
+                            <h4>Editorialize</h4>
+                            <p>A multi-factor scorer picks the night's best events, then Gemini writes the daily "Tonight" article and generates its hero image.</p>
+                            <span class="pipeline-tech">Gemini + Image</span>
+                        </div>
+                    </li>
+                    <li class="pipeline-step animate-on-scroll">
+                        <span class="pipeline-num">06</span>
+                        <div class="pipeline-body">
+                            <h4>Publish</h4>
+                            <p>Eleventy rebuilds the whole site from the fresh data and deploys to a global CDN — live before the morning rush.</p>
+                            <span class="pipeline-tech">Eleventy</span>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+
+            <!-- Architecture -->
+            <div class="tech-block">
+                <h3 class="tech-block-title">How It's Built</h3>
+                <p class="tech-block-intro">A serverless, scale-to-zero architecture on Google Cloud. It costs nothing when idle and handles traffic spikes for free.</p>
+                <div class="arch-grid">
+                    <div class="arch-card animate-on-scroll">
+                        <span class="arch-label">Data</span>
+                        <h4>Cloud Firestore</h4>
+                        <p>The single source of truth — venues, crawled content, events, happy hours, news, and the daily editorial all live here.</p>
+                    </div>
+                    <div class="arch-card animate-on-scroll">
+                        <span class="arch-label">Compute</span>
+                        <h4>Cloud Run + Gemini</h4>
+                        <p>The agent fleet runs as a containerized Cloud Run Job, triggered nightly by Cloud Scheduler, with Gemini as the reasoning engine.</p>
+                    </div>
+                    <div class="arch-card animate-on-scroll">
+                        <span class="arch-label">Delivery</span>
+                        <h4>Eleventy + Firebase</h4>
+                        <p>A static site generated at build time and served from Firebase Hosting's CDN — fast, cheap, and resilient.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chatbot -->
+            <div class="tech-feature animate-on-scroll">
+                <div class="tech-feature-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                        <path d="M8 10h.01"/>
+                        <path d="M12 10h.01"/>
+                        <path d="M16 10h.01"/>
+                    </svg>
+                </div>
+                <div class="tech-feature-body">
+                    <h3>Meet "Bar Matey"</h3>
+                    <p>A witty AI bartender lives in the app's chat rooms. Ask it where to go and it answers from a continuously regenerated context of every venue and upcoming event — grounded in real data, aware of which neighborhood or venue room you're in. It's retrieval-augmented generation, wired straight into Firestore via a Cloud Function trigger.</p>
+                </div>
+            </div>
+
+            <!-- Engagement layer -->
+            <div class="tech-feature animate-on-scroll">
+                <div class="tech-feature-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+                        <circle cx="9" cy="7" r="4"/>
+                        <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                    </svg>
+                </div>
+                <div class="tech-feature-body">
+                    <h3>A Daily Product, Not Just a Directory</h3>
+                    <p>Beyond the static site: Google / Apple / email accounts, favorites and “For You Tonight,” multi-axis ratings, “I’m going tonight” presence, contributor event submissions, morning push digests, a three.js night-city map, and a React admin — the engagement layer that turns structured venue data into a product people return to.</p>
+                </div>
             </div>
         </div>
     </section>
