@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Creative Inference | AI Technology Studio</title>
-    <meta name="description" content="Creative Inference is an AI technology studio building intelligent agents, natural language search, and AI-powered platforms that ship to production.">
+    <title>Creative Inference | Applied AI Product Studio</title>
+    <meta name="description" content="Creative Inference builds self-updating consumer AI platforms — combining autonomous agent swarms, multimodal vision moderation, ComfyUI generative media, embodied concierges, 3D maps, and MCP-ready cloud architecture.">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Creative Inference | AI Technology Studio">
-    <meta property="og:description" content="We build at the frontier of applied AI — intelligent agents, natural language search, and AI-powered platforms.">
+    <meta property="og:title" content="Creative Inference | Applied AI Product Studio">
+    <meta property="og:description" content="Autonomous multi-agent pipelines, ComfyUI living art direction, embodied AI concierges, and hybrid GPU + cloud platforms shipped to production.">
     <meta property="og:image" content="https://creativeinference.com/img/og-image.jpg">
     <meta property="og:url" content="https://creativeinference.com">
     <meta property="og:type" content="website">
@@ -18,9 +18,9 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=20261121b">
     <link rel="icon" href="img/ci_logo.png" type="image/png">
 
     <!-- Google tag (gtag.js) -->
@@ -36,21 +36,22 @@
 <body>
     <!-- Header -->
     <header class="main-header">
-        <div class="container">
+        <div class="container header-inner">
             <a href="#" class="logo-link">
-                <img src="img/ci_logo.png" alt="Creative Inference Logo" class="nav-logo">
+                <img src="img/ci_logo.png" alt="Creative Inference Logo" class="nav-logo" width="38" height="38">
                 <span class="nav-logo-text">Creative Inference</span>
             </a>
             <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
                 <span class="hamburger"></span>
             </button>
-            <nav class="main-nav" id="main-nav">
+            <nav class="main-nav" id="main-nav" aria-label="Primary">
                 <ul>
-                    <li><a href="#about">About</a></li>
                     <li><a href="#capabilities">Capabilities</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#tech">Tech</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#tour">Tech Tour</a></li>
+                    <li><a href="#simone">Simone Canon</a></li>
+                    <li><a href="#architecture">Architecture</a></li>
+                    <li><a href="#projects">Products</a></li>
+                    <li><a href="#contact" class="nav-cta">Get in Touch</a></li>
                 </ul>
             </nav>
         </div>
@@ -58,286 +59,918 @@
 
     <!-- Hero Section -->
     <section id="hero" class="hero-section">
-        <div class="hero-bg">
-            <img src="img/hero-bg.jpg" alt="" class="hero-bg-image">
+        <div class="hero-media" aria-hidden="true">
+            <img src="media/hero-studio.webp" alt="" class="hero-bg-image" fetchpriority="high">
+            <video class="hero-video" autoplay loop muted playsinline preload="metadata" poster="media/hero-studio.webp">
+                <source src="media/hero-studio.webm" type="video/webm">
+            </video>
         </div>
         <div class="hero-overlay"></div>
+
         <div class="container hero-content">
-            <h1 class="hero-title animate-on-scroll">Building at the Frontier of AI</h1>
-            <p class="hero-subtitle animate-on-scroll">An AI technology studio crafting intelligent agents, natural language search, and AI-powered platforms that ship to production.</p>
+            <div class="eyebrow">
+                <span class="eyebrow-dot" aria-hidden="true"></span>
+                <span>Applied AI Product Studio</span>
+            </div>
+            <h1 class="hero-title">Living AI Platforms That Run Themselves</h1>
+            <p class="hero-subtitle">
+                We design and ship self-updating consumer products powered by autonomous agent swarms, multimodal vision moderation, ComfyUI generative art &amp; cinemagraphs, embodied AI hosts, and hybrid local-GPU + Google Cloud infrastructure.
+            </p>
             <div class="hero-buttons">
-                <a href="#projects" class="btn btn-primary">View Our Work</a>
-                <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+                <a href="#tour" class="btn btn-primary">Take the Technology Tour &darr;</a>
+                <a href="#simone" class="btn btn-secondary">Explore Simone Canon</a>
             </div>
         </div>
-    </section>
 
-    <!-- About Section -->
-    <section id="about" class="about-section">
-        <div class="container">
-            <div class="about-content animate-on-scroll">
-                <h2>Who We Are</h2>
-                <p>Creative Inference is an independent AI technology studio. We design, build, and ship products powered by artificial intelligence — from autonomous agents and natural language search to AI-driven curation and content generation. Local directories go stale overnight; we build the agent pipelines, cloud infrastructure, and engagement layers that keep products fresh and ship them to production.</p>
+        <div class="container hero-metrics">
+            <div class="metrics-strip">
+                <div class="metric-item">
+                    <span class="metric-val">25+</span>
+                    <span class="metric-lbl">Autonomous Production Agents</span>
+                </div>
+                <div class="metric-item">
+                    <span class="metric-val">Vision + Video</span>
+                    <span class="metric-lbl">Local ComfyUI &amp; Multimodal QA</span>
+                </div>
+                <div class="metric-item">
+                    <span class="metric-val">7 Plates</span>
+                    <span class="metric-lbl">Living Cinemagraph Persona</span>
+                </div>
+                <div class="metric-item">
+                    <span class="metric-val">$0 Marginal</span>
+                    <span class="metric-lbl">Local GPU Nightly Inference</span>
+                </div>
+                <div class="metric-item">
+                    <span class="metric-val">MCP + 3D</span>
+                    <span class="metric-lbl">Spatial Web &amp; Agent-Ready APIs</span>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Capabilities Section -->
-    <section id="capabilities" class="capabilities-section">
-        <div class="container">
-            <div class="section-header">
-                <h2>What We Do</h2>
-                <p>Full-stack capabilities across the applied-AI stack.</p>
-            </div>
-            <div class="capabilities-grid">
-                <div class="capability-card animate-on-scroll">
-                    <div class="capability-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M12 2a4 4 0 0 1 4 4c0 1.95-1.4 3.58-3.25 3.93L12 22"/>
-                            <path d="M8 6a4 4 0 0 1 8 0"/>
-                            <path d="M5 10a7 7 0 0 0 14 0"/>
-                            <circle cx="12" cy="6" r="1"/>
-                        </svg>
-                    </div>
-                    <h3>AI Agents &amp; Automation</h3>
-                    <p>Multi-agent systems that detect, reason, and act — automating pipelines that used to need a human in the loop.</p>
-                </div>
-                <div class="capability-card animate-on-scroll">
-                    <div class="capability-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="11" cy="11" r="7"/>
-                            <path d="M21 21l-4.3-4.3"/>
-                        </svg>
-                    </div>
-                    <h3>Natural Language Search</h3>
-                    <p>Semantic and conversational search that understands intent, powered by large language models and embeddings.</p>
-                </div>
-                <div class="capability-card animate-on-scroll">
-                    <div class="capability-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M12 3l2.2 5.4L20 9.3l-4 3.9.9 5.6L12 16.1 7.1 18.8 8 13.2l-4-3.9 5.8-.9z"/>
-                        </svg>
-                    </div>
-                    <h3>AI Curation &amp; Content</h3>
-                    <p>Automated curation, ranking, and AI-generated content that keeps products fresh without manual effort.</p>
-                </div>
-                <div class="capability-card animate-on-scroll">
-                    <div class="capability-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M17.5 19a4.5 4.5 0 0 0 .5-8.97A6 6 0 0 0 6.34 9.5 4 4 0 0 0 7 17.5"/>
-                            <path d="M8 19h9.5"/>
-                        </svg>
-                    </div>
-                    <h3>Cloud Infrastructure</h3>
-                    <p>Production-grade deployments on Google Cloud — scalable, observable, and built to run AI workloads reliably.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects-section">
-        <div class="container">
-            <div class="section-header">
-                <h2>What We've Built</h2>
-                <p>AI-powered products, shipped to production.</p>
-            </div>
-
-            <!-- Project Grid -->
-            <div class="projects-grid">
-
-                <!-- BarDC -->
-                <article class="project-card animate-on-scroll" data-category="ai">
-                    <a href="https://bardc.com" target="_blank" rel="noopener" class="project-link">
-                        <div class="project-image-wrapper">
-                            <img src="img/bardc-thumb.jpg" alt="BarDC - AI-powered bar directory" class="project-image" loading="lazy">
-                            <div class="project-overlay">
-                                <span class="project-visit">Visit Site &rarr;</span>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-title">BarDC</h3>
-                            <p class="project-description">AI-powered bar and club directory for Washington, D.C. Autonomous Gemini agents crawl and structure venue data nightly on Google Cloud; Eleventy + Firebase deliver a fast public site with Bar Matey chat, ratings, and member features.</p>
-                            <div class="project-tech">
-                                <span>Gemini</span>
-                                <span>AI Agents</span>
-                                <span>GCP</span>
-                                <span>Firebase</span>
-                                <span>Eleventy</span>
-                                <span>Puppeteer</span>
-                                <span>NLP / Chat</span>
-                                <span>three.js</span>
-                            </div>
-                        </div>
-                    </a>
-                </article>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Tech Tour Section -->
-    <section id="tech" class="tech-section">
+    <section id="capabilities" class="section">
         <div class="container">
             <div class="section-header animate-on-scroll">
-                <h2>Under the Hood: BarDC</h2>
-                <p>Happy hours change, events disappear, ratings drift — and editorial teams can't manually keep hundreds of bars current. Here's how Bar DC turns the messy open web into a nightlife guide that refreshes itself overnight.</p>
+                <div class="eyebrow">What We Build</div>
+                <h2>Full-Stack Applied AI, Proven in Production</h2>
+                <p>Local directories and live discovery products rot overnight when maintained by hand. Creative Inference builds the autonomous pipelines, creative synthesis engines, and spatial UX that keep digital worlds fresh every morning.</p>
             </div>
 
-            <!-- Stats -->
-            <div class="tech-stats">
-                <div class="stat animate-on-scroll">
-                    <span class="stat-number">15+</span>
-                    <span class="stat-label">Autonomous agents</span>
-                </div>
-                <div class="stat animate-on-scroll">
-                    <span class="stat-number">Gemini</span>
-                    <span class="stat-label">Reasoning &amp; generation</span>
-                </div>
-                <div class="stat animate-on-scroll">
-                    <span class="stat-number">Nightly</span>
-                    <span class="stat-label">Self-refreshing pipeline</span>
-                </div>
-                <div class="stat animate-on-scroll">
-                    <span class="stat-number">$0 idle</span>
-                    <span class="stat-label">Serverless, scale-to-zero</span>
-                </div>
-            </div>
-
-            <!-- Agent Pipeline -->
-            <div class="tech-block">
-                <h3 class="tech-block-title">The Agent Pipeline</h3>
-                <p class="tech-block-intro">Every night a fleet of specialized AI agents runs end to end. Each agent does one job well and hands off to the next — with a human-in-the-loop approval lane when the scrape is uncertain.</p>
-                <ol class="pipeline">
-                    <li class="pipeline-step animate-on-scroll">
-                        <span class="pipeline-num">01</span>
-                        <div class="pipeline-body">
-                            <h4>Crawl</h4>
-                            <p>A headless-Chrome agent visits each venue's website, walking up to 10 pages and storing the raw content.</p>
-                            <span class="pipeline-tech">Puppeteer</span>
+            <div class="capabilities-grid">
+                <!-- 1 -->
+                <article class="capability-card animate-on-scroll">
+                    <div class="cap-top">
+                        <div class="capability-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="3"></circle>
+                                <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"></path>
+                            </svg>
                         </div>
-                    </li>
-                    <li class="pipeline-step animate-on-scroll">
-                        <span class="pipeline-num">02</span>
-                        <div class="pipeline-body">
-                            <h4>Extract</h4>
-                            <p>Gemini reads the unstructured HTML and pulls out structured events, happy-hour specials, and social links.</p>
-                            <span class="pipeline-tech">Gemini</span>
-                        </div>
-                    </li>
-                    <li class="pipeline-step animate-on-scroll">
-                        <span class="pipeline-num">03</span>
-                        <div class="pipeline-body">
-                            <h4>Enrich</h4>
-                            <p>Google Places adds official ratings, hours, price levels, photos, and fresh reviews for every venue.</p>
-                            <span class="pipeline-tech">Places API</span>
-                        </div>
-                    </li>
-                    <li class="pipeline-step animate-on-scroll">
-                        <span class="pipeline-num">04</span>
-                        <div class="pipeline-body">
-                            <h4>Curate</h4>
-                            <p>More agents categorize venues against a master taxonomy and write structured, on-brand descriptions from real reviews.</p>
-                            <span class="pipeline-tech">Gemini</span>
-                        </div>
-                    </li>
-                    <li class="pipeline-step animate-on-scroll">
-                        <span class="pipeline-num">05</span>
-                        <div class="pipeline-body">
-                            <h4>Editorialize</h4>
-                            <p>A multi-factor scorer picks the night's best events, then Gemini writes the daily "Tonight" article and generates its hero image.</p>
-                            <span class="pipeline-tech">Gemini + Image</span>
-                        </div>
-                    </li>
-                    <li class="pipeline-step animate-on-scroll">
-                        <span class="pipeline-num">06</span>
-                        <div class="pipeline-body">
-                            <h4>Publish</h4>
-                            <p>Eleventy rebuilds the whole site from the fresh data and deploys to a global CDN — live before the morning rush.</p>
-                            <span class="pipeline-tech">Eleventy</span>
-                        </div>
-                    </li>
-                </ol>
-            </div>
-
-            <!-- Architecture -->
-            <div class="tech-block">
-                <h3 class="tech-block-title">How It's Built</h3>
-                <p class="tech-block-intro">A serverless, scale-to-zero architecture on Google Cloud. It costs nothing when idle and handles traffic spikes for free.</p>
-                <div class="arch-grid">
-                    <div class="arch-card animate-on-scroll">
-                        <span class="arch-label">Data</span>
-                        <h4>Cloud Firestore</h4>
-                        <p>The single source of truth — venues, crawled content, events, happy hours, news, and the daily editorial all live here.</p>
+                        <span class="cap-kicker">01 · Autonomy</span>
                     </div>
-                    <div class="arch-card animate-on-scroll">
-                        <span class="arch-label">Compute</span>
-                        <h4>Cloud Run + Gemini</h4>
-                        <p>The agent fleet runs as a containerized Cloud Run Job, triggered nightly by Cloud Scheduler, with Gemini as the reasoning engine.</p>
+                    <h3>Multi-Agent Crawl &amp; RSS Swarms</h3>
+                    <p>Domain-guarded headless browsers, structured LLM event &amp; deal extractors, automated approval lanes, and live local RSS radars that detect new openings and closures without human re-entry.</p>
+                    <div class="cap-tags">
+                        <span>Puppeteer</span>
+                        <span>Domain Guards</span>
+                        <span>RSS Intelligence</span>
+                        <span>JSON Schema</span>
                     </div>
-                    <div class="arch-card animate-on-scroll">
-                        <span class="arch-label">Delivery</span>
-                        <h4>Eleventy + Firebase</h4>
-                        <p>A static site generated at build time and served from Firebase Hosting's CDN — fast, cheap, and resilient.</p>
+                </article>
+
+                <!-- 2 -->
+                <article class="capability-card animate-on-scroll">
+                    <div class="cap-top">
+                        <div class="capability-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"></path>
+                                <circle cx="12" cy="12" r="3"></circle>
+                            </svg>
+                        </div>
+                        <span class="cap-kicker">02 · Multimodal QA</span>
+                    </div>
+                    <h3>Strict Vision AI Moderation</h3>
+                    <p>Every scraped candidate venue photo passes through a local multimodal vision editor (<code>gemma4:12b</code>) that rejects event flyers, overlaid promo text, logos, and parked-domain stock before publishing.</p>
+                    <div class="cap-tags">
+                        <span>gemma4:12b Vision</span>
+                        <span>Zero-Flyer Gate</span>
+                        <span>Sharp WebP</span>
+                    </div>
+                </article>
+
+                <!-- 3 -->
+                <article class="capability-card animate-on-scroll">
+                    <div class="cap-top">
+                        <div class="capability-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                                <polygon points="23 7 16 12 23 17 23 7"></polygon>
+                                <rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>
+                            </svg>
+                        </div>
+                        <span class="cap-kicker">03 · Generative Media</span>
+                    </div>
+                    <h3>ComfyUI Art &amp; Cinemagraph Studio</h3>
+                    <p>Automated local diffusion and image-to-video pipelines (<code>Flux 3 Klein NVFP4</code> + <code>Wan 2.2 TI2V</code>) render cohesive illustrated worlds, daily editorial heroes, and seamless looping WebM cinemagraphs.</p>
+                    <div class="cap-tags">
+                        <span>ComfyUI</span>
+                        <span>Flux 3 NVFP4</span>
+                        <span>Wan 2.2 Video</span>
+                        <span>VP9 WebM</span>
+                    </div>
+                </article>
+
+                <!-- 4 -->
+                <article class="capability-card animate-on-scroll">
+                    <div class="cap-top">
+                        <div class="capability-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                                <path d="M8 10h.01M12 10h.01M16 10h.01"></path>
+                            </svg>
+                        </div>
+                        <span class="cap-kicker">04 · Embodied AI</span>
+                    </div>
+                    <h3>Character Hosts &amp; RAG Concierges</h3>
+                    <p>Embodied AI hosts with canonical visual identity bibles that shift art direction across rooms, answer from live Firestore context, spotlight cards on the page, and generate shareable itinerary passes.</p>
+                    <div class="cap-tags">
+                        <span>Gemini Flash</span>
+                        <span>Dual-Buffer Video</span>
+                        <span>Room Chat</span>
+                        <span>Code 128 Passes</span>
+                    </div>
+                </article>
+
+                <!-- 5 -->
+                <article class="capability-card animate-on-scroll">
+                    <div class="cap-top">
+                        <div class="capability-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                                <polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"></polygon>
+                                <line x1="8" y1="2" x2="8" y2="18"></line>
+                                <line x1="16" y1="6" x2="16" y2="22"></line>
+                            </svg>
+                        </div>
+                        <span class="cap-kicker">05 · Spatial &amp; Search</span>
+                    </div>
+                    <h3>3D City Maps &amp; Programmatic SEO</h3>
+                    <p>Custom Three.js 3D cityscapes with world-space venue billboards, MapLibre GL real-time deal maps, programmatic neighborhood corridors, evergreen guides, and structured Schema.org graphs.</p>
+                    <div class="cap-tags">
+                        <span>Three.js</span>
+                        <span>MapLibre GL</span>
+                        <span>Eleventy 3 SSG</span>
+                        <span>Core Web Vitals</span>
+                    </div>
+                </article>
+
+                <!-- 6 -->
+                <article class="capability-card animate-on-scroll">
+                    <div class="cap-top">
+                        <div class="capability-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
+                        </div>
+                        <span class="cap-kicker">06 · Agent-Native Web</span>
+                    </div>
+                    <h3>Streamable MCP &amp; Hybrid Cloud</h3>
+                    <p>Machine-readable <code>/llms.txt</code> manifests, zero-auth JSON indexes, and Streamable HTTP Model Context Protocol architectures built to serve both human visitors and AI assistants at edge speed.</p>
+                    <div class="cap-tags">
+                        <span>MCP HTTP</span>
+                        <span>llms.txt</span>
+                        <span>Firebase / GCP</span>
+                        <span>BigQuery</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive 5-Stop Technology Tour -->
+    <section id="tour" class="section section-alt">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <div class="eyebrow">Interactive Platform Tour</div>
+                <h2>Inside the Engine: How BarDC Runs</h2>
+                <p>Step through the five production systems powering <strong>Bar DC</strong> — our flagship self-updating Washington, D.C. nightlife platform — and the shared blueprint behind our upcoming releases.</p>
+            </div>
+
+            <div class="tour-shell animate-on-scroll">
+                <!-- Tour Stepper Tabs -->
+                <div class="tour-tabs" role="tablist" aria-label="Technology Tour Stops">
+                    <button class="tour-tab is-active" role="tab" aria-selected="true" aria-controls="tour-panel-0" id="tour-tab-0" type="button">
+                        <span class="tour-tab-num">STOP 01</span>
+                        <span class="tour-tab-label">25+ Agent Nightly Swarm</span>
+                    </button>
+                    <button class="tour-tab" role="tab" aria-selected="false" aria-controls="tour-panel-1" id="tour-tab-1" tabindex="-1" type="button">
+                        <span class="tour-tab-num">STOP 02</span>
+                        <span class="tour-tab-label">Simone &amp; Living Worlds</span>
+                    </button>
+                    <button class="tour-tab" role="tab" aria-selected="false" aria-controls="tour-panel-2" id="tour-tab-2" tabindex="-1" type="button">
+                        <span class="tour-tab-num">STOP 03</span>
+                        <span class="tour-tab-label">Vision QA &amp; ComfyUI Video</span>
+                    </button>
+                    <button class="tour-tab" role="tab" aria-selected="false" aria-controls="tour-panel-3" id="tour-tab-3" tabindex="-1" type="button">
+                        <span class="tour-tab-num">STOP 04</span>
+                        <span class="tour-tab-label">3D City &amp; Live Deal Maps</span>
+                    </button>
+                    <button class="tour-tab" role="tab" aria-selected="false" aria-controls="tour-panel-4" id="tour-tab-4" tabindex="-1" type="button">
+                        <span class="tour-tab-num">STOP 05</span>
+                        <span class="tour-tab-label">Agent-Native Feeds &amp; MCP</span>
+                    </button>
+                </div>
+
+                <!-- Tour Panels -->
+                <div class="tour-panels">
+                    <!-- STOP 01: Agent Swarm -->
+                    <div class="tour-panel is-active" id="tour-panel-0" role="tabpanel" aria-labelledby="tour-tab-0">
+                        <div class="tour-copy">
+                            <span class="tour-copy-kicker">01 · Autonomous Content Operations</span>
+                            <h3>Every Night, 25+ Specialized Agents Rebuild the City</h3>
+                            <p>While Washington sleeps, an orchestrated pipeline crawls hundreds of bar websites, extracts live happenings, monitors local press, verifies domain health, writes the morning dispatch, and ships a fresh static build before 6 AM.</p>
+                            <ul class="tour-bullets">
+                                <li><strong>Hijacked &amp; Expired Domain Guards:</strong> Headless crawlers detect parked domains, casino redirects, and DNS failures automatically so dead links never pollute listings.</li>
+                                <li><strong>Structured Event &amp; Happy Hour Extraction:</strong> Local LLMs turn messy HTML menus and calendars into typed deals, recurring nights, and one-off DJ sets with an automated approval lane.</li>
+                                <li><strong>RSS Opening &amp; Closure Radar:</strong> Agents scan DC journalism feeds daily to onboard newly opened bars, verify closures, and trigger targeted venue copy refreshes.</li>
+                            </ul>
+                            <div class="tour-pills">
+                                <span>Puppeteer + Cheerio</span>
+                                <span>Ollama gemma4:12b</span>
+                                <span>282+ Verified Happy Hours</span>
+                                <span>Eleventy CDN Rebuild</span>
+                            </div>
+                        </div>
+
+                        <div class="tour-stage">
+                            <div class="stage-media-wrap">
+                                <span class="stage-badge-top">
+                                    <span class="stage-badge-dot"></span>
+                                    <span>ComfyUI · Flux 3 + Wan 2.2 Loop</span>
+                                </span>
+                                <video class="ambient-video" autoplay loop muted playsinline preload="metadata" poster="media/tour-agents.webp">
+                                    <source src="media/tour-agents.webm" type="video/webm">
+                                </video>
+                            </div>
+                            <div class="stage-hud">
+                                <div class="hud-pipeline-grid">
+                                    <div class="hud-step">
+                                        <span class="hud-step-id">STAGE 01</span>
+                                        <span class="hud-step-name">Domain-Safe Crawl</span>
+                                        <span class="hud-step-meta">Puppeteer · 636 venues</span>
+                                    </div>
+                                    <div class="hud-step">
+                                        <span class="hud-step-id">STAGE 02</span>
+                                        <span class="hud-step-name">Events &amp; Deals</span>
+                                        <span class="hud-step-meta">Structured JSON + QA</span>
+                                    </div>
+                                    <div class="hud-step">
+                                        <span class="hud-step-id">STAGE 03</span>
+                                        <span class="hud-step-name">RSS City Radar</span>
+                                        <span class="hud-step-meta">Openings &amp; closures</span>
+                                    </div>
+                                    <div class="hud-step">
+                                        <span class="hud-step-id">STAGE 04</span>
+                                        <span class="hud-step-name">Vision Photo Gate</span>
+                                        <span class="hud-step-meta">gemma4:12b audit</span>
+                                    </div>
+                                    <div class="hud-step">
+                                        <span class="hud-step-id">STAGE 05</span>
+                                        <span class="hud-step-name">Tonight Dispatch</span>
+                                        <span class="hud-step-meta">Editorial + WebM hero</span>
+                                    </div>
+                                    <div class="hud-step">
+                                        <span class="hud-step-id">STAGE 06</span>
+                                        <span class="hud-step-name">Static Edge Deploy</span>
+                                        <span class="hud-step-meta">Eleventy → Firebase</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- STOP 02: Simone & Living Worlds -->
+                    <div class="tour-panel" id="tour-panel-1" role="tabpanel" aria-labelledby="tour-tab-1" hidden>
+                        <div class="tour-copy">
+                            <span class="tour-copy-kicker">02 · Embodied AI Host &amp; Character Canon</span>
+                            <h3>Meet Simone: Chameleon Host &amp; Spatial Co-Pilot</h3>
+                            <p>Instead of bolting on a generic chatbot bubble, Creative Inference engineered <strong>Simone</strong> — an embodied DC nightlife curator whose floating picture-in-picture monitor crossfades seamlessly across conversational states and neighborhood illustration styles.</p>
+                            <ul class="tour-bullets">
+                                <li><strong>Zero-Flicker Dual-Buffer Cinemagraphs:</strong> Dual <code>&lt;video&gt;</code> buffers preload and crossfade smoothly between <code>idle</code>, <code>greet</code>, <code>speaking</code>, and five distinct DC bar worlds.</li>
+                                <li><strong>Collectible Code 128 "DC Night Pass":</strong> Ask for an evening crawl and Simone prints a timed 3-stop ticket with Haversine walking intervals and a scannable Code 128 Set B SVG barcode.</li>
+                                <li><strong>DOM Spotlight &amp; Diegetic Skins:</strong> Physically ribbons <code>★ SIMONE'S #1 PICK</code> onto live venue cards and re-skins page borders &amp; halftones by vibe. <a href="#simone">See the full 7-plate Canon below &darr;</a></li>
+                            </ul>
+                            <div class="tour-pills">
+                                <span>Click Worlds on the Right &rarr;</span>
+                                <span>Dual-Buffer WebM</span>
+                                <span>Code 128 SVG Passes</span>
+                            </div>
+                        </div>
+
+                        <div class="tour-stage">
+                            <div class="stage-media-wrap">
+                                <span class="stage-badge-top">
+                                    <span class="stage-badge-dot"></span>
+                                    <span id="simoneStageBadge">Cocktail Lounge · Default Host</span>
+                                </span>
+                                <video id="simoneStageVideo" class="ambient-video simone-framed" loop muted playsinline preload="none" poster="media/simone/lounge-idle.webp">
+                                    <source src="media/simone/lounge-idle.webm" type="video/webm">
+                                </video>
+                            </div>
+                            <div class="simone-switcher">
+                                <div class="simone-world-btns" role="group" aria-label="Switch Simone visual world">
+                                    <button type="button" class="world-btn is-selected" aria-pressed="true"
+                                        data-video="media/simone/lounge-idle.webm"
+                                        data-poster="media/simone/lounge-idle.webp"
+                                        data-world="Cocktail Lounge · Default Host"
+                                        data-style="Lo-Fi Neon Anime">Lounge</button>
+                                    <button type="button" class="world-btn" aria-pressed="false"
+                                        data-video="media/simone/speakeasy.webm"
+                                        data-poster="media/simone/speakeasy.webp"
+                                        data-world="Velvet &amp; Cipher · Shaw Speakeasies"
+                                        data-style="Noir Graphic Novel Ink">Speakeasy</button>
+                                    <button type="button" class="world-btn" aria-pressed="false"
+                                        data-video="media/simone/jazz.webm"
+                                        data-poster="media/simone/jazz.webp"
+                                        data-world="Brass on U Street · Jazz &amp; Live Music"
+                                        data-style="Mid-Century UPA Gouache">Jazz Club</button>
+                                    <button type="button" class="world-btn" aria-pressed="false"
+                                        data-video="media/simone/rooftop.webm"
+                                        data-poster="media/simone/rooftop.webp"
+                                        data-world="Golden Hour Horizon · Rooftops"
+                                        data-style="Modern Cel-Shaded">Rooftop</button>
+                                    <button type="button" class="world-btn" aria-pressed="false"
+                                        data-video="media/simone/dive.webm"
+                                        data-poster="media/simone/dive.webp"
+                                        data-world="Last Call Jukebox · Adams Morgan Dives"
+                                        data-style="Risograph Gig Poster">Dive Bar</button>
+                                </div>
+                                <span class="simone-style-tag" id="simoneStyleTag">Style: Lo-Fi Neon Anime</span>
+                            </div>
+                            <div class="night-pass-preview">
+                                <div class="pass-stops">
+                                    <strong>DC NIGHT PASS:</strong> <span>01</span> Allegory &rarr; <span>02</span> Silver Lyan &rarr; <span>03</span> Death &amp; Co.
+                                </div>
+                                <a href="#simone" style="font-size:0.74rem;font-weight:700;">Interactive Pass Studio &darr;</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- STOP 03: Vision Moderation & ComfyUI -->
+                    <div class="tour-panel" id="tour-panel-2" role="tabpanel" aria-labelledby="tour-tab-2" hidden>
+                        <div class="tour-copy">
+                            <span class="tour-copy-kicker">03 · Multimodal Quality Control &amp; Generative Art</span>
+                            <h3>Vision-Verified Photography Meets Bespoke Cinemagraphs</h3>
+                            <p>Automated directories usually look "scraped" — full of stretched logos, DJ flyers, and generic AI slop. We solved visual quality from both ends: strict multimodal vision filtering for real venue photos and curated 2D print styles for editorial media.</p>
+                            <ul class="tour-bullets">
+                                <li><strong>335+ Vision-Verified Venue Heroes:</strong> Candidate images scraped from official bar websites are inspected by <code>gemma4:12b</code> vision — approving clean interiors, rooftops, and cocktails while rejecting any overlaid text, flyers, or collages.</li>
+                                <li><strong>Zero-Thrash ComfyUI Batching:</strong> Nightly &amp; weekly media jobs unload LLM VRAM, batch all <code>Flux 3 Klein NVFP4</code> stills, then batch <code>Wan 2.2 TI2V</code> WebM loops for sub-600KB atmospheric motion.</li>
+                                <li><strong>Admin Override Controls:</strong> React ops dashboard lets editors lock, swap, or re-verify hero photography with one click.</li>
+                            </ul>
+                            <div class="tour-pills">
+                                <span>gemma4:12b Vision</span>
+                                <span>Flux 3 Klein NVFP4</span>
+                                <span>Wan 2.2 TI2V 5B</span>
+                                <span>335+ Venue Heroes</span>
+                            </div>
+                        </div>
+
+                        <div class="tour-stage">
+                            <div class="stage-media-wrap">
+                                <span class="stage-badge-top">
+                                    <span class="stage-badge-dot"></span>
+                                    <span>Generated Locally · Flux 3 + Wan 2.2 Cinemagraph</span>
+                                </span>
+                                <video class="ambient-video" loop muted playsinline preload="none" poster="media/bardc-showcase.webp">
+                                    <source src="media/bardc-showcase.webm" type="video/webm">
+                                </video>
+                            </div>
+                            <div class="stage-hud">
+                                <div class="vision-gate-row">
+                                    <div class="vision-verdict pass">
+                                        <span class="verdict-head">✓ VISION APPROVED (strictlyValid: true)</span>
+                                        <span class="verdict-desc">Clean text-free bar interiors, rooftop terraces, craft cocktails &amp; recognizable storefronts → normalized to 1200×675 WebP.</span>
+                                    </div>
+                                    <div class="vision-verdict reject">
+                                        <span class="verdict-head">✕ VISION REJECTED (Auto-Filtered)</span>
+                                        <span class="verdict-desc">Event flyers, promo text, wordmarks, menus, Yelp/Resy badges, collages &amp; parked-domain stock blocked automatically.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- STOP 04: Spatial & Live Deal Engine -->
+                    <div class="tour-panel" id="tour-panel-3" role="tabpanel" aria-labelledby="tour-tab-3" hidden>
+                        <div class="tour-copy">
+                            <span class="tour-copy-kicker">04 · Spatial Discovery &amp; Real-Time Filtering</span>
+                            <h3>Explore the Night in 3D or Filter Deals Happening Right Now</h3>
+                            <p>Discovery shouldn't stop at a flat A–Z list. Bar DC pairs a custom Three.js 3D nocturnal city projection and an interactive MapLibre GL district explorer with real-time happy hour and event scoring.</p>
+                            <ul class="tour-bullets">
+                                <li><strong>Three.js + MapLibre Dual Spatial Stack:</strong> World-space billboard venue logo chips that scale cleanly on zoom, neighborhood camera flights, and walkable multi-stop <code>#pass=</code> routes.</li>
+                                <li><strong>Live Happy Hour &amp; Deal Engine:</strong> 282+ structured DC happy hours filterable by "Happening Right Now," day of week, neighborhood, and drink/food deal category.</li>
+                                <li><strong>SSR 0–10 Multi-Axis Ratings &amp; Corridors:</strong> Server-rendered vibe/drinks/music/value ratings, 10+ evergreen guides, and programmatic neighborhood × vibe corridors tuned for Core Web Vitals.</li>
+                            </ul>
+                            <div class="tour-pills">
+                                <span>Three.js 3D City</span>
+                                <span>MapLibre GL</span>
+                                <span>Live Deal Filters</span>
+                                <span>SSR 0–10 Ratings</span>
+                            </div>
+                        </div>
+
+                        <div class="tour-stage">
+                            <div class="stage-media-wrap">
+                                <span class="stage-badge-top">
+                                    <span class="stage-badge-dot"></span>
+                                    <span>Spatial Discovery · 3D City &amp; Walkable Night Passes</span>
+                                </span>
+                                <img src="media/tour-spatial-map.webp" alt="Isometric 3D nocturnal DC map with glowing venue pins and walkable route" loading="lazy" width="1280" height="720">
+                            </div>
+                            <div class="stage-hud">
+                                <div class="hud-pipeline-grid">
+                                    <div class="hud-step">
+                                        <span class="hud-step-id">SPATIAL 3D</span>
+                                        <span class="hud-step-name">Three.js Night City</span>
+                                        <span class="hud-step-meta">Billboard venue logos</span>
+                                    </div>
+                                    <div class="hud-step">
+                                        <span class="hud-step-id">VECTOR 2D</span>
+                                        <span class="hud-step-name">MapLibre GL DC</span>
+                                        <span class="hud-step-meta">#hood &amp; #pass deep links</span>
+                                    </div>
+                                    <div class="hud-step">
+                                        <span class="hud-step-id">LIVE PULSE</span>
+                                        <span class="hud-step-name">282+ Happy Hours</span>
+                                        <span class="hud-step-meta">"Live Now" deal clock</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- STOP 05: Agent-Native MCP -->
+                    <div class="tour-panel" id="tour-panel-4" role="tabpanel" aria-labelledby="tour-tab-4" hidden>
+                        <div class="tour-copy">
+                            <span class="tour-copy-kicker">05 · Built for Humans &amp; External AI Agents</span>
+                            <h3>Machine-Readable Feeds, <code>/llms.txt</code> &amp; Streamable MCP</h3>
+                            <p>Next-generation discovery happens inside AI assistants as often as search engines. Our platform architecture exposes structured static JSON feeds, a canonical <code>/llms.txt</code> manifest, and a read-only Streamable HTTP Model Context Protocol server module.</p>
+                            <ul class="tour-bullets">
+                                <li><strong>Zero-Auth Machine Feeds:</strong> Build-time <code>search.json</code> (636+ venues), <code>tonight.json</code>, <code>map.json</code>, and <code>city.json</code> serve structured context at CDN speed without scraping HTML.</li>
+                                <li><strong>4-Tool Streamable HTTP MCP Module:</strong> Exposes venue discovery, tonight's live happenings, neighborhood happy hours, and walkable 3-stop Night Pass builders over JSON-RPC 2.0.</li>
+                                <li><strong>Rich Schema Graph:</strong> Consolidated neighborhood hubs, 301 canonicalization, and <code>BarOrPub</code> / <code>Event</code> / <code>Article</code> JSON-LD keep search engines and LLMs aligned.</li>
+                            </ul>
+                            <div class="tour-pills">
+                                <span>Streamable HTTP MCP</span>
+                                <span>/llms.txt</span>
+                                <span>Zero-Auth JSON Feeds</span>
+                                <span>JSON-LD Schema</span>
+                            </div>
+                        </div>
+
+                        <div class="tour-stage mcp-stage-card">
+                            <div class="mcp-code-header">
+                                <span>Agent Feeds &amp; MCP Tool Spec</span>
+                                <button type="button" class="copy-btn" data-copy-target="bardcMcpSnippet">Copy Feed Commands</button>
+                            </div>
+                            <pre class="mcp-pre"><code id="bardcMcpSnippet">curl -s https://bardc.com/llms.txt
+curl -s https://bardc.com/data/tonight.json | jq .
+curl -s https://bardc.com/data/search.json | jq '.[0:3]'</code></pre>
+                            <div class="mcp-tools-grid">
+                                <div class="mcp-tool-box">
+                                    <code>search_dc_bars</code>
+                                    <span>Filter 636+ DC bars by vibe, keyword &amp; neighborhood.</span>
+                                </div>
+                                <div class="mcp-tool-box">
+                                    <code>get_tonight_events</code>
+                                    <span>Approved DJ sets, trivia, live music &amp; parties tonight.</span>
+                                </div>
+                                <div class="mcp-tool-box">
+                                    <code>get_happy_hours</code>
+                                    <span>Verified drink &amp; food specials by DC neighborhood.</span>
+                                </div>
+                                <div class="mcp-tool-box">
+                                    <code>build_night_pass</code>
+                                    <span>Builds a walkable 3-stop bar crawl + shareable map URL.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tour Footer Controls -->
+                <div class="tour-footer">
+                    <span class="tour-progress-text" id="tourStepCounter">Stop 01 of 05</span>
+                    <div class="tour-nav-btns">
+                        <button type="button" class="tour-nav-btn" id="tourPrevBtn" aria-label="Previous tour stop">&larr; Previous</button>
+                        <button type="button" class="tour-nav-btn" id="tourNextBtn" aria-label="Next tour stop">Next Stop &rarr;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Simone Character Canon & Embodied Concierge Deep-Dive -->
+    <section id="simone" class="section">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <div class="flap-badge-wrap">
+                    <span class="eyebrow-dot" aria-hidden="true"></span>
+                    <div class="flaps" data-flap="SIMONE · VISUAL CANON"></div>
+                </div>
+                <h2>Embodied AI Case Study: One Host, Seven Living Plates</h2>
+                <p>For Bar DC, we designed <strong>Simone</strong> — a resident nightlife curator with a locked character bible rendered locally in eclectic 2D print &amp; animation styles via ComfyUI (<code>Flux 3 Klein NVFP4</code> &rarr; <code>Wan 2.2 TI2V</code>), paired with mechanical split-flap status boards and collectible Code 128 Night Passes.</p>
+            </div>
+
+            <!-- Interactive Dual-Buffer Director's Monitor + Live Code 128 Night Pass -->
+            <div class="canon-studio-grid animate-on-scroll">
+                <!-- Left: Dual-Buffer Cinema Monitor -->
+                <div class="canon-monitor-card">
+                    <div class="dual-cinema-stage" id="canonDualStage">
+                        <div class="monitor-top-bar">
+                            <span class="monitor-pip-pill">
+                                <span class="stage-badge-dot"></span>
+                                <span>Dual-Buffer WebM Monitor</span>
+                            </span>
+                            <div class="flap-badge-wrap" style="margin:0;padding:0.28rem 0.55rem;">
+                                <div class="flaps" id="canonMonitorFlap" data-flap="LO-FI LOUNGE · IDLE" data-flap-manual></div>
+                            </div>
+                        </div>
+                        <video class="dual-cinema-video is-active" autoplay loop muted playsinline preload="metadata" poster="media/simone/lounge-idle.webp" src="media/simone/lounge-idle.webm"></video>
+                        <video class="dual-cinema-video" loop muted playsinline preload="metadata"></video>
+                    </div>
+
+                    <div class="monitor-controls">
+                        <div>
+                            <div class="control-group-row" style="margin-bottom:0.6rem;">
+                                <span class="control-group-label">States</span>
+                                <button type="button" class="canon-trigger-btn is-active" aria-pressed="true" data-canon-plate="lounge-idle">Idle · Host</button>
+                                <button type="button" class="canon-trigger-btn" aria-pressed="false" data-canon-plate="lounge-greet">Greet · Toast</button>
+                                <button type="button" class="canon-trigger-btn" aria-pressed="false" data-canon-plate="lounge-speaking">Speaking · Reply</button>
+                            </div>
+                            <div class="control-group-row">
+                                <span class="control-group-label">Worlds</span>
+                                <button type="button" class="canon-trigger-btn" aria-pressed="false" data-canon-plate="speakeasy">Noir Speakeasy</button>
+                                <button type="button" class="canon-trigger-btn" aria-pressed="false" data-canon-plate="jazz">UPA Jazz</button>
+                                <button type="button" class="canon-trigger-btn" aria-pressed="false" data-canon-plate="rooftop">Cel Rooftop</button>
+                                <button type="button" class="canon-trigger-btn" aria-pressed="false" data-canon-plate="dive">Risograph Dive</button>
+                            </div>
+                        </div>
+
+                        <div class="monitor-meta-line">
+                            <span id="canonMonitorTitle">The Host · Idle — Dark charcoal blazer over warm rust-gold silk camisole</span>
+                            <strong id="canonMonitorStyle">Lo-Fi Neon Anime</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Live Collectible Code 128 Set B Night Pass -->
+                <div class="night-pass-card">
+                    <div>
+                        <div class="pass-header">
+                            <div>
+                                <div class="pass-kicker">BAR DC · DIEGETIC ITINERARY ARTIFACT</div>
+                                <div class="pass-title" id="nightPassTitle">14TH &amp; U COCKTAIL PASS</div>
+                            </div>
+                            <span class="pass-serial" id="nightPassSerial">BDC-LNG904-3S</span>
+                        </div>
+
+                        <div class="pass-itinerary" id="nightPassStops"></div>
+                    </div>
+
+                    <div>
+                        <div class="pass-perforation" aria-hidden="true"></div>
+                        <div class="pass-footer">
+                            <div class="pass-barcode-box">
+                                <div id="nightPassBarcodeSvg"></div>
+                                <span class="pass-barcode-serial" id="nightPassBarcodeCode">BDC-LNG904-3S</span>
+                            </div>
+                            <a id="nightPassMapLink" href="https://bardc.com/map/#pass=jane-jane,service-bar,left-door" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Fly Route on 3D Map &nearr;</a>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Chatbot -->
-            <div class="tech-feature animate-on-scroll">
-                <div class="tech-feature-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
-                        <path d="M8 10h.01"/>
-                        <path d="M12 10h.01"/>
-                        <path d="M16 10h.01"/>
-                    </svg>
+            <!-- Canonical Identity Anchor -->
+            <div class="identity-anchor-box animate-on-scroll">
+                <div class="identity-anchor-top">
+                    <span>01 · CANONICAL IDENTITY ANCHOR (LOCKED ACROSS ALL STYLES)</span>
+                    <button type="button" class="copy-btn" data-copy-target="simoneIdentityPrompt">Copy Identity Anchor</button>
                 </div>
-                <div class="tech-feature-body">
-                    <h3>Meet "Bar Matey"</h3>
-                    <p>A witty AI bartender lives in the app's chat rooms. Ask it where to go and it answers from a continuously regenerated context of every venue and upcoming event — grounded in real data, aware of which neighborhood or venue room you're in. It's retrieval-augmented generation, wired straight into Firestore via a Cloud Function trigger.</p>
-                </div>
+                <p id="simoneIdentityPrompt">Simone, a stylish charismatic African American woman in her late 20s with warm rich brown skin, expressive dark almond eyes, shoulder-length sculpted dark box braids with subtle warm amber highlights, and signature small gold hoop earrings</p>
             </div>
 
-            <!-- Engagement layer -->
-            <div class="tech-feature animate-on-scroll">
-                <div class="tech-feature-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
-                        <circle cx="9" cy="7" r="4"/>
-                        <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
-                        <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-                    </svg>
+            <!-- Full 7-Plate Living Cinemagraph Gallery -->
+            <div class="canon-plates-subhead animate-on-scroll">
+                <h3>02 · All Seven Living Plates (Click Any Plate to Load Monitor)</h3>
+                <span>Batched Locally · Flux 3 Klein NVFP4 (768×448) &rarr; Wan 2.2 TI2V 5B (49f VP9 WebM)</span>
+            </div>
+
+            <div class="canon-plates-grid animate-on-scroll">
+                <!-- 1: lounge-idle -->
+                <article class="canon-plate-card is-selected" data-canon-plate="lounge-idle">
+                    <div class="canon-plate-viewport">
+                        <video loop muted playsinline preload="metadata" poster="media/simone/lounge-idle.webp">
+                            <source src="media/simone/lounge-idle.webm" type="video/webm">
+                        </video>
+                        <span class="canon-plate-style-badge">Lo-Fi Neon Anime</span>
+                        <span class="canon-plate-role-badge">State · Idle</span>
+                    </div>
+                    <div class="canon-plate-body">
+                        <span class="canon-plate-world">Cocktail Lounge (Default)</span>
+                        <h4>The Host · Idle</h4>
+                        <p class="canon-plate-meta"><strong>Wardrobe:</strong> Sleek dark charcoal tailored blazer over warm rust-gold silk camisole.</p>
+                        <p class="canon-plate-meta"><strong>Palette:</strong> Deep midnight plum, warm amber gold, neon rose magenta.</p>
+                    </div>
+                </article>
+
+                <!-- 2: lounge-greet -->
+                <article class="canon-plate-card" data-canon-plate="lounge-greet">
+                    <div class="canon-plate-viewport">
+                        <video loop muted playsinline preload="metadata" poster="media/simone/lounge-greet.webp">
+                            <source src="media/simone/lounge-greet.webm" type="video/webm">
+                        </video>
+                        <span class="canon-plate-style-badge">Lo-Fi Neon Anime</span>
+                        <span class="canon-plate-role-badge">State · Greet</span>
+                    </div>
+                    <div class="canon-plate-body">
+                        <span class="canon-plate-world">Cocktail Lounge (Greeting)</span>
+                        <h4>The Welcome · Greet</h4>
+                        <p class="canon-plate-meta"><strong>Motion:</strong> Raising a glowing amber coupe glass in a welcoming toast with gentle shimmer.</p>
+                        <p class="canon-plate-meta"><strong>Palette:</strong> Deep midnight plum, radiant amber gold, coral neon bokeh.</p>
+                    </div>
+                </article>
+
+                <!-- 3: lounge-speaking -->
+                <article class="canon-plate-card" data-canon-plate="lounge-speaking">
+                    <div class="canon-plate-viewport">
+                        <video loop muted playsinline preload="metadata" poster="media/simone/lounge-speaking.webp">
+                            <source src="media/simone/lounge-speaking.webm" type="video/webm">
+                        </video>
+                        <span class="canon-plate-style-badge">Lo-Fi Neon Anime</span>
+                        <span class="canon-plate-role-badge">State · Speaking</span>
+                    </div>
+                    <div class="canon-plate-body">
+                        <span class="canon-plate-world">Cocktail Lounge (Conversing)</span>
+                        <h4>The Recommendation · Speaking</h4>
+                        <p class="canon-plate-meta"><strong>Motion:</strong> Animated mid-sentence lip &amp; head movement while streaming concierge replies.</p>
+                        <p class="canon-plate-meta"><strong>Palette:</strong> Deep violet-black, warm amber, electric cyan &amp; magenta.</p>
+                    </div>
+                </article>
+
+                <!-- 4: speakeasy -->
+                <article class="canon-plate-card" data-canon-plate="speakeasy">
+                    <div class="canon-plate-viewport">
+                        <video loop muted playsinline preload="metadata" poster="media/simone/speakeasy.webp">
+                            <source src="media/simone/speakeasy.webm" type="video/webm">
+                        </video>
+                        <span class="canon-plate-style-badge">Noir Graphic Novel Ink</span>
+                        <span class="canon-plate-role-badge">World Skin</span>
+                    </div>
+                    <div class="canon-plate-body">
+                        <span class="canon-plate-world">Speakeasy &amp; Hidden Bars</span>
+                        <h4>Velvet &amp; Cipher</h4>
+                        <p class="canon-plate-meta"><strong>Wardrobe:</strong> Tailored midnight velvet lapel coat with smoked old fashioned &amp; rising smoke wisp.</p>
+                        <p class="canon-plate-meta"><strong>Palette:</strong> Ink black, burnished brass gold, deep crimson velvet.</p>
+                    </div>
+                </article>
+
+                <!-- 5: jazz -->
+                <article class="canon-plate-card" data-canon-plate="jazz">
+                    <div class="canon-plate-viewport">
+                        <video loop muted playsinline preload="metadata" poster="media/simone/jazz.webp">
+                            <source src="media/simone/jazz.webm" type="video/webm">
+                        </video>
+                        <span class="canon-plate-style-badge">Mid-Century UPA Gouache</span>
+                        <span class="canon-plate-role-badge">World Skin</span>
+                    </div>
+                    <div class="canon-plate-body">
+                        <span class="canon-plate-world">Jazz &amp; Live Music</span>
+                        <h4>Brass on U Street</h4>
+                        <p class="canon-plate-meta"><strong>Wardrobe:</strong> Chic black knit turtleneck framed by angular brass horn players &amp; stage beams.</p>
+                        <p class="canon-plate-meta"><strong>Palette:</strong> Burnt sienna, indigo night, warm brass gold, cream gouache.</p>
+                    </div>
+                </article>
+
+                <!-- 6: rooftop -->
+                <article class="canon-plate-card" data-canon-plate="rooftop">
+                    <div class="canon-plate-viewport">
+                        <video loop muted playsinline preload="metadata" poster="media/simone/rooftop.webp">
+                            <source src="media/simone/rooftop.webm" type="video/webm">
+                        </video>
+                        <span class="canon-plate-style-badge">Modern Cel-Shaded</span>
+                        <span class="canon-plate-role-badge">World Skin</span>
+                    </div>
+                    <div class="canon-plate-body">
+                        <span class="canon-plate-world">Rooftops &amp; Patios</span>
+                        <h4>Golden Hour Horizon</h4>
+                        <p class="canon-plate-meta"><strong>Wardrobe:</strong> Effortless cream linen blazer over terracotta top beneath twinkling string lights.</p>
+                        <p class="canon-plate-meta"><strong>Palette:</strong> Twilight cyan, sunset coral, string-light gold, deep indigo.</p>
+                    </div>
+                </article>
+
+                <!-- 7: dive -->
+                <article class="canon-plate-card" data-canon-plate="dive">
+                    <div class="canon-plate-viewport">
+                        <video loop muted playsinline preload="metadata" poster="media/simone/dive.webp">
+                            <source src="media/simone/dive.webm" type="video/webm">
+                        </video>
+                        <span class="canon-plate-style-badge">Risograph Gig Poster</span>
+                        <span class="canon-plate-role-badge">World Skin</span>
+                    </div>
+                    <div class="canon-plate-body">
+                        <span class="canon-plate-world">Dive Bars &amp; Late Night</span>
+                        <h4>Last Call Jukebox</h4>
+                        <p class="canon-plate-meta"><strong>Wardrobe:</strong> Cool vintage moto jacket leaning beside a pulsing neon jukebox in Adams Morgan.</p>
+                        <p class="canon-plate-meta"><strong>Palette:</strong> Fluorescent risograph pink, electric teal, warm mustard overprint.</p>
+                    </div>
+                </article>
+            </div>
+
+            <!-- 03 · Embodied UX Capabilities -->
+            <div class="canon-ux-grid animate-on-scroll">
+                <div class="arch-plane">
+                    <span class="plane-badge">Diegetic World Skins</span>
+                    <h3>Page-Aware Visual Chameleon</h3>
+                    <p>Navigating into Speakeasies, Rooftops, Jazz, or Dive Bars shifts both Simone's floating PiP monitor and the page's own diegetic styling — from double-brass speakeasy frames to risograph halftone textures.</p>
                 </div>
-                <div class="tech-feature-body">
-                    <h3>A Daily Product, Not Just a Directory</h3>
-                    <p>Beyond the static site: Google / Apple / email accounts, favorites and “For You Tonight,” multi-axis ratings, “I’m going tonight” presence, contributor event submissions, morning push digests, a three.js night-city map, and a React admin — the engagement layer that turns structured venue data into a product people return to.</p>
+                <div class="arch-plane">
+                    <span class="plane-badge">Spatial Page &amp; Map Co-Pilot</span>
+                    <h3>Live DOM Spotlights &amp; 3D Flights</h3>
+                    <p>Simone reads venue cards rendered on the current page, physically ribbons her top picks right on the grid behind chat, or dispatches <code>simone:fly-pass</code> to fly the 3D DC map along your route.</p>
                 </div>
+                <div class="arch-plane">
+                    <span class="plane-badge cloud">Dual-Mode Social</span>
+                    <h3>1-on-1 Concierge + Live Room Chat</h3>
+                    <p>Visitors can ask Simone privately with zero sign-in friction, or flip into room-scoped Firestore threads (venue, neighborhood, or vibe rooms) to swap plans and summon <code>@simone</code> live.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hybrid Architecture Section -->
+    <section id="architecture" class="section section-alt">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <div class="eyebrow">Hybrid Infrastructure</div>
+                <h2>Local GPU Inference Forge + Scale-to-Zero Cloud</h2>
+                <p>Running vision moderation across thousands of candidate images and generating daily video loops in the cloud burns runaway API budgets. Our hybrid topology pairs dedicated local GPU compute with global serverless edge delivery.</p>
+            </div>
+
+            <div class="arch-showcase">
+                <div class="arch-visual-card animate-on-scroll">
+                    <div class="arch-visual-media">
+                        <video class="ambient-video" autoplay loop muted playsinline preload="metadata" poster="media/tour-hybrid-gpu.webp">
+                            <source src="media/tour-hybrid-gpu.webm" type="video/webm">
+                        </video>
+                    </div>
+                    <div class="arch-visual-caption">
+                        <strong>Zero-Marginal-Cost Nightly Synthesis</strong>
+                        <span>Ollama + ComfyUI → Firebase Edge CDN</span>
+                    </div>
+                </div>
+
+                <div class="arch-planes animate-on-scroll">
+                    <div class="arch-plane">
+                        <span class="plane-badge">Plane A · Dedicated Local GPU Workstation</span>
+                        <h3>Overnight Intelligence &amp; Media Forge</h3>
+                        <p>Power-aware scheduled pipelines (<code>systemd-inhibit</code>) run headless crawls, <code>gemma4:12b</code> JSON extraction &amp; strict photo vision audits, <code>Flux 3 Klein NVFP4</code> illustrations, <code>Wan 2.2</code> WebM cinemagraphs, and Eleventy static builds locally with automatic VRAM handoff.</p>
+                        <div class="plane-chips">
+                            <span>Dual RTX GPUs</span>
+                            <span>Ollama (gemma4:12b)</span>
+                            <span>ComfyUI (Flux 3 + Wan 2.2)</span>
+                            <span>Puppeteer</span>
+                            <span>Eleventy 3</span>
+                        </div>
+                    </div>
+
+                    <div class="arch-bridge">Structured Firestore Writes + Static CDN Assets</div>
+
+                    <div class="arch-plane">
+                        <span class="plane-badge cloud">Plane B · Google Cloud &amp; Firebase Edge</span>
+                        <h3>Instant Public Delivery &amp; Live Interactive APIs</h3>
+                        <p>Static HTML, JSON feeds, and cached WebP/WebM media ship to Firebase Hosting's global CDN. Cloud Functions (2nd gen) power live Gemini concierge asks, room chat, user submissions, and GA4 → BigQuery analytics — scaling cleanly to zero when idle.</p>
+                        <div class="plane-chips">
+                            <span>Cloud Firestore</span>
+                            <span>Firebase Hosting CDN</span>
+                            <span>Cloud Functions v2</span>
+                            <span>Gemini Flash</span>
+                            <span>React 18 Admin</span>
+                            <span>BigQuery</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products & Upcoming Roadmap Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <div class="eyebrow">Portfolio &amp; Roadmap</div>
+                <h2>Live in Production — With More Worlds Coming Soon</h2>
+                <p>Bar DC proved that an autonomous agent + generative media architecture can run an entire metropolitan vertical end-to-end. Now we're bringing the same engine to new cities and live discovery categories.</p>
+            </div>
+
+            <!-- Flagship Live Card: BarDC -->
+            <article class="flagship-card animate-on-scroll">
+                <div class="flagship-media">
+                    <video class="ambient-video" autoplay loop muted playsinline preload="metadata" poster="media/bardc-showcase.webp">
+                        <source src="media/bardc-showcase.webm" type="video/webm">
+                    </video>
+                </div>
+                <div class="flagship-body">
+                    <span class="status-pill live">
+                        <span class="stage-badge-dot"></span>
+                        <span>Live in Production · bardc.com</span>
+                    </span>
+                    <h3>Bar DC</h3>
+                    <p>Washington, D.C.'s self-updating bars, happy hours, and nightlife platform. Autonomous agents crawl and verify 636+ indexed listings nightly, moderate venue hero photography with multimodal vision, illustrate daily dispatches &amp; cinemagraphs via ComfyUI, and guide visitors with Simone, our embodied multi-world concierge.</p>
+
+                    <div class="flagship-stats">
+                        <div>
+                            <strong>335+</strong>
+                            <span>Vision-Verified Heroes</span>
+                        </div>
+                        <div>
+                            <strong>282+</strong>
+                            <span>Live Happy Hours</span>
+                        </div>
+                        <div>
+                            <strong>25+</strong>
+                            <span>Autonomous Agents</span>
+                        </div>
+                    </div>
+
+                    <div class="flagship-actions">
+                        <a href="https://bardc.com" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Visit bardc.com &rarr;</a>
+                        <a href="https://bardc.com/map/" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">3D &amp; Live Deal Map &nearr;</a>
+                        <a href="#simone" class="btn btn-secondary btn-sm">Simone Canon &uarr;</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Upcoming Similar Projects -->
+            <div class="upcoming-header animate-on-scroll">
+                <h3>Next on the Creative Inference Engine</h3>
+                <p>Built on the same autonomous crawl, vision moderation, ComfyUI media, and spatial concierge stack.</p>
+            </div>
+
+            <div class="upcoming-grid">
+                <article class="upcoming-card animate-on-scroll">
+                    <div class="upcoming-img-wrap">
+                        <img src="media/coming-cities.webp" alt="Illustrated lantern-lit courtyard wine bar overlooking a metropolitan harbor skyline" loading="lazy" width="960" height="544">
+                    </div>
+                    <div class="upcoming-body">
+                        <span class="status-pill soon">Coming Soon · New Metros &amp; Dining</span>
+                        <h4>Autonomous City Nightlife &amp; Culinary Guides</h4>
+                        <p>Expanding our self-refreshing local intelligence architecture to additional metropolitan markets and dining verticals — pairing nightly menu &amp; deal extraction, strict vision photo curation, live neighborhood maps, and local AI concierges.</p>
+                        <div class="cap-tags">
+                            <span>Multi-City Engine</span>
+                            <span>Live Specials</span>
+                            <span>Vision Curation</span>
+                            <span>Embodied Host</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="upcoming-card animate-on-scroll">
+                    <div class="upcoming-img-wrap">
+                        <img src="media/coming-radars.webp" alt="Mid-century gouache cutaway of an underground live music stage, vinyl listening bar, and gallery opening" loading="lazy" width="960" height="544">
+                    </div>
+                    <div class="upcoming-body">
+                        <span class="status-pill soon">In Development · Cultural Verticals</span>
+                        <h4>Live Music, Arts &amp; Experiential Radars</h4>
+                        <p>Living discovery guides for fast-moving cultural ecosystems — independent venues, gallery corridors, and weekend happenings — featuring ComfyUI editorial illustration, walkable 3D itinerary passes, and machine-readable feeds.</p>
+                        <div class="cap-tags">
+                            <span>Event Extraction</span>
+                            <span>ComfyUI Cinemagraphs</span>
+                            <span>3D Routes</span>
+                            <span>Agent-Ready Feeds</span>
+                        </div>
+                    </div>
+                </article>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact-section">
+    <section id="contact" class="section section-alt">
         <div class="container">
-            <div class="section-header">
-                <h2>Get in Touch</h2>
-                <p>Have a project in mind? Let's talk.</p>
-            </div>
-            <div class="contact-block">
-                <a href="mailto:hello@creativeinference.com" class="contact-link">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                        <rect x="2" y="4" width="20" height="16" rx="2"/>
-                        <path d="M22 4L12 13 2 4"/>
-                    </svg>
-                    <span>hello@creativeinference.com</span>
-                </a>
-                <a href="https://github.com/creative-inference" target="_blank" rel="noopener" class="contact-link">
-                    <svg viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
-                    </svg>
-                    <span>GitHub</span>
-                </a>
+            <div class="contact-card animate-on-scroll">
+                <div class="eyebrow">Work With Us</div>
+                <h2>Building Something Ambitious With Applied AI?</h2>
+                <p>Whether you're launching a self-updating media platform, an embodied AI concierge, or a custom multi-agent pipeline — let's talk.</p>
+                <div class="contact-links">
+                    <a href="mailto:hello@creativeinference.com" class="contact-link">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                            <path d="M22 4L12 13 2 4"></path>
+                        </svg>
+                        <span>hello@creativeinference.com</span>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -346,17 +979,20 @@
     <footer class="main-footer">
         <div class="container footer-content">
             <div class="footer-info">
-                <img src="img/ci_logo.png" alt="Creative Inference Logo" class="footer-logo">
-                <p>&copy; <span class="year">2026</span> Creative Inference</p>
+                <img src="img/ci_logo.png" alt="Creative Inference Logo" class="footer-logo" width="30" height="30">
+                <span>&copy; <span class="year">2026</span> Creative Inference · Applied AI Product Studio</span>
             </div>
             <div class="footer-links">
+                <a href="#tour">Tech Tour</a>
+                <a href="#simone">Simone Canon</a>
+                <a href="#architecture">Architecture</a>
                 <a href="https://bardc.com" target="_blank" rel="noopener">BarDC</a>
                 <a href="#contact">Contact</a>
             </div>
         </div>
     </footer>
 
-    <script src="script.js" defer></script>
+    <script src="script.js?v=20261121b" defer></script>
 </body>
 
 </html>
