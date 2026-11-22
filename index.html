@@ -20,7 +20,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="styles.css?v=20261121b">
+    <link rel="stylesheet" href="styles.css?v=20261121c">
     <link rel="icon" href="img/ci_logo.png" type="image/png">
 
     <!-- Google tag (gtag.js) -->
@@ -48,7 +48,6 @@
                 <ul>
                     <li><a href="#capabilities">Capabilities</a></li>
                     <li><a href="#tour">Tech Tour</a></li>
-                    <li><a href="#simone">Simone Canon</a></li>
                     <li><a href="#architecture">Architecture</a></li>
                     <li><a href="#projects">Products</a></li>
                     <li><a href="#contact" class="nav-cta">Get in Touch</a></li>
@@ -78,7 +77,7 @@
             </p>
             <div class="hero-buttons">
                 <a href="#tour" class="btn btn-primary">Take the Technology Tour &darr;</a>
-                <a href="#simone" class="btn btn-secondary">Explore Simone Canon</a>
+                <a href="#projects" class="btn btn-secondary">Explore Products</a>
             </div>
         </div>
 
@@ -91,10 +90,6 @@
                 <div class="metric-item">
                     <span class="metric-val">Multi-Model</span>
                     <span class="metric-lbl">Inkling, Gemma, Gemini &amp; Diffusion</span>
-                </div>
-                <div class="metric-item">
-                    <span class="metric-val">7 Plates</span>
-                    <span class="metric-lbl">Living Cinemagraph Persona</span>
                 </div>
                 <div class="metric-item">
                     <span class="metric-val">$0 Marginal</span>
@@ -248,13 +243,13 @@
         </div>
     </section>
 
-    <!-- Interactive 5-Stop Technology Tour -->
+    <!-- Interactive 4-Stop Technology Tour -->
     <section id="tour" class="section section-alt">
         <div class="container">
             <div class="section-header animate-on-scroll">
                 <div class="eyebrow">Interactive Platform Tour</div>
                 <h2>Inside the Engine: How BarDC Runs</h2>
-                <p>Step through the five production systems powering <strong>Bar DC</strong> — our flagship self-updating Washington, D.C. nightlife platform — and the shared blueprint behind our upcoming releases.</p>
+                <p>Step through the four production systems powering <strong>Bar DC</strong> — our flagship self-updating Washington, D.C. nightlife platform — and the shared blueprint behind our upcoming releases.</p>
             </div>
 
             <div class="tour-shell animate-on-scroll">
@@ -266,18 +261,14 @@
                     </button>
                     <button class="tour-tab" role="tab" aria-selected="false" aria-controls="tour-panel-1" id="tour-tab-1" tabindex="-1" type="button">
                         <span class="tour-tab-num">STOP 02</span>
-                        <span class="tour-tab-label">Simone &amp; Living Worlds</span>
+                        <span class="tour-tab-label">Vision QA &amp; ComfyUI Video</span>
                     </button>
                     <button class="tour-tab" role="tab" aria-selected="false" aria-controls="tour-panel-2" id="tour-tab-2" tabindex="-1" type="button">
                         <span class="tour-tab-num">STOP 03</span>
-                        <span class="tour-tab-label">Vision QA &amp; ComfyUI Video</span>
+                        <span class="tour-tab-label">3D City &amp; Live Deal Maps</span>
                     </button>
                     <button class="tour-tab" role="tab" aria-selected="false" aria-controls="tour-panel-3" id="tour-tab-3" tabindex="-1" type="button">
                         <span class="tour-tab-num">STOP 04</span>
-                        <span class="tour-tab-label">3D City &amp; Live Deal Maps</span>
-                    </button>
-                    <button class="tour-tab" role="tab" aria-selected="false" aria-controls="tour-panel-4" id="tour-tab-4" tabindex="-1" type="button">
-                        <span class="tour-tab-num">STOP 05</span>
                         <span class="tour-tab-label">Agent-Native Feeds &amp; MCP</span>
                     </button>
                 </div>
@@ -350,77 +341,10 @@
                         </div>
                     </div>
 
-                    <!-- STOP 02: Simone & Living Worlds -->
+                    <!-- STOP 02: Vision Moderation & ComfyUI -->
                     <div class="tour-panel" id="tour-panel-1" role="tabpanel" aria-labelledby="tour-tab-1" hidden>
                         <div class="tour-copy">
-                            <span class="tour-copy-kicker">02 · Embodied AI Host &amp; Character Canon</span>
-                            <h3>Meet Simone: Chameleon Host &amp; Spatial Co-Pilot</h3>
-                            <p>Instead of bolting on a generic chatbot bubble, Creative Inference engineered <strong>Simone</strong> — an embodied DC nightlife curator whose floating picture-in-picture monitor crossfades seamlessly across conversational states and neighborhood illustration styles.</p>
-                            <ul class="tour-bullets">
-                                <li><strong>Zero-Flicker Dual-Buffer Cinemagraphs:</strong> Dual <code>&lt;video&gt;</code> buffers preload and crossfade smoothly between <code>idle</code>, <code>greet</code>, <code>speaking</code>, and five distinct DC bar worlds.</li>
-                                <li><strong>Collectible Code 128 "DC Night Pass":</strong> Ask for an evening crawl and Simone prints a timed 3-stop ticket with Haversine walking intervals and a scannable Code 128 Set B SVG barcode.</li>
-                                <li><strong>DOM Spotlight &amp; Diegetic Skins:</strong> Physically ribbons <code>★ SIMONE'S #1 PICK</code> onto live venue cards and re-skins page borders &amp; halftones by vibe. <a href="#simone">See the full 7-plate Canon below &darr;</a></li>
-                            </ul>
-                            <div class="tour-pills">
-                                <span>Click Worlds on the Right &rarr;</span>
-                                <span>Dual-Buffer WebM</span>
-                                <span>Code 128 SVG Passes</span>
-                            </div>
-                        </div>
-
-                        <div class="tour-stage">
-                            <div class="stage-media-wrap">
-                                <span class="stage-badge-top">
-                                    <span class="stage-badge-dot"></span>
-                                    <span id="simoneStageBadge">Cocktail Lounge · Default Host</span>
-                                </span>
-                                <video id="simoneStageVideo" class="ambient-video simone-framed" loop muted playsinline preload="none" poster="media/simone/lounge-idle.webp">
-                                    <source src="media/simone/lounge-idle.webm" type="video/webm">
-                                </video>
-                            </div>
-                            <div class="simone-switcher">
-                                <div class="simone-world-btns" role="group" aria-label="Switch Simone visual world">
-                                    <button type="button" class="world-btn is-selected" aria-pressed="true"
-                                        data-video="media/simone/lounge-idle.webm"
-                                        data-poster="media/simone/lounge-idle.webp"
-                                        data-world="Cocktail Lounge · Default Host"
-                                        data-style="Lo-Fi Neon Anime">Lounge</button>
-                                    <button type="button" class="world-btn" aria-pressed="false"
-                                        data-video="media/simone/speakeasy.webm"
-                                        data-poster="media/simone/speakeasy.webp"
-                                        data-world="Velvet &amp; Cipher · Shaw Speakeasies"
-                                        data-style="Noir Graphic Novel Ink">Speakeasy</button>
-                                    <button type="button" class="world-btn" aria-pressed="false"
-                                        data-video="media/simone/jazz.webm"
-                                        data-poster="media/simone/jazz.webp"
-                                        data-world="Brass on U Street · Jazz &amp; Live Music"
-                                        data-style="Mid-Century UPA Gouache">Jazz Club</button>
-                                    <button type="button" class="world-btn" aria-pressed="false"
-                                        data-video="media/simone/rooftop.webm"
-                                        data-poster="media/simone/rooftop.webp"
-                                        data-world="Golden Hour Horizon · Rooftops"
-                                        data-style="Modern Cel-Shaded">Rooftop</button>
-                                    <button type="button" class="world-btn" aria-pressed="false"
-                                        data-video="media/simone/dive.webm"
-                                        data-poster="media/simone/dive.webp"
-                                        data-world="Last Call Jukebox · Adams Morgan Dives"
-                                        data-style="Risograph Gig Poster">Dive Bar</button>
-                                </div>
-                                <span class="simone-style-tag" id="simoneStyleTag">Style: Lo-Fi Neon Anime</span>
-                            </div>
-                            <div class="night-pass-preview">
-                                <div class="pass-stops">
-                                    <strong>DC NIGHT PASS:</strong> <span>01</span> Allegory &rarr; <span>02</span> Silver Lyan &rarr; <span>03</span> Death &amp; Co.
-                                </div>
-                                <a href="#simone" style="font-size:0.74rem;font-weight:700;">Interactive Pass Studio &darr;</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- STOP 03: Vision Moderation & ComfyUI -->
-                    <div class="tour-panel" id="tour-panel-2" role="tabpanel" aria-labelledby="tour-tab-2" hidden>
-                        <div class="tour-copy">
-                            <span class="tour-copy-kicker">03 · Multimodal Quality Control &amp; Generative Art</span>
+                            <span class="tour-copy-kicker">02 · Multimodal Quality Control &amp; Generative Art</span>
                             <h3>Vision-Verified Photography Meets Bespoke Cinemagraphs</h3>
                             <p>Automated directories usually look "scraped" — full of stretched logos, DJ flyers, and generic AI slop. We solved visual quality from both ends: strict multimodal vision filtering for real venue photos and curated 2D print styles for editorial media.</p>
                             <ul class="tour-bullets">
@@ -461,10 +385,10 @@
                         </div>
                     </div>
 
-                    <!-- STOP 04: Spatial & Live Deal Engine -->
-                    <div class="tour-panel" id="tour-panel-3" role="tabpanel" aria-labelledby="tour-tab-3" hidden>
+                    <!-- STOP 03: Spatial & Live Deal Engine -->
+                    <div class="tour-panel" id="tour-panel-2" role="tabpanel" aria-labelledby="tour-tab-2" hidden>
                         <div class="tour-copy">
-                            <span class="tour-copy-kicker">04 · Spatial Discovery &amp; Real-Time Filtering</span>
+                            <span class="tour-copy-kicker">03 · Spatial Discovery &amp; Real-Time Filtering</span>
                             <h3>Explore the Night in 3D or Filter Deals Happening Right Now</h3>
                             <p>Discovery shouldn't stop at a flat A–Z list. Bar DC pairs a custom Three.js 3D nocturnal city projection and an interactive MapLibre GL district explorer with real-time happy hour and event scoring.</p>
                             <ul class="tour-bullets">
@@ -510,10 +434,10 @@
                         </div>
                     </div>
 
-                    <!-- STOP 05: Agent-Native MCP -->
-                    <div class="tour-panel" id="tour-panel-4" role="tabpanel" aria-labelledby="tour-tab-4" hidden>
+                    <!-- STOP 04: Agent-Native MCP -->
+                    <div class="tour-panel" id="tour-panel-3" role="tabpanel" aria-labelledby="tour-tab-3" hidden>
                         <div class="tour-copy">
-                            <span class="tour-copy-kicker">05 · Built for Humans &amp; External AI Agents</span>
+                            <span class="tour-copy-kicker">04 · Built for Humans &amp; External AI Agents</span>
                             <h3>Machine-Readable Feeds, <code>/llms.txt</code> &amp; Streamable MCP</h3>
                             <p>Next-generation discovery happens inside AI assistants as often as search engines. Our platform architecture exposes structured static JSON feeds, a canonical <code>/llms.txt</code> manifest, and a read-only Streamable HTTP Model Context Protocol server module.</p>
                             <ul class="tour-bullets">
@@ -566,7 +490,7 @@
 
                 <!-- Tour Footer Controls -->
                 <div class="tour-footer">
-                    <span class="tour-progress-text" id="tourStepCounter">Stop 01 of 05</span>
+                    <span class="tour-progress-text" id="tourStepCounter">Stop 01 of 04</span>
                     <div class="tour-nav-btns">
                         <button type="button" class="tour-nav-btn" id="tourPrevBtn" aria-label="Previous tour stop">&larr; Previous</button>
                         <button type="button" class="tour-nav-btn" id="tourNextBtn" aria-label="Next tour stop">Next Stop &rarr;</button>
@@ -576,246 +500,8 @@
         </div>
     </section>
 
-    <!-- Simone Character Canon & Embodied Concierge Deep-Dive -->
-    <section id="simone" class="section">
-        <div class="container">
-            <div class="section-header animate-on-scroll">
-                <div class="flap-badge-wrap">
-                    <span class="eyebrow-dot" aria-hidden="true"></span>
-                    <div class="flaps" data-flap="SIMONE · VISUAL CANON"></div>
-                </div>
-                <h2>Embodied AI Case Study: One Host, Seven Living Plates</h2>
-                <p>For Bar DC, we designed <strong>Simone</strong> — a resident nightlife curator with a locked character bible rendered locally in eclectic 2D print &amp; animation styles via ComfyUI (<strong>Flux</strong> &rarr; <strong>Wan</strong>), paired with mechanical split-flap status boards and collectible Code 128 Night Passes.</p>
-            </div>
-
-            <!-- Interactive Dual-Buffer Director's Monitor + Live Code 128 Night Pass -->
-            <div class="canon-studio-grid animate-on-scroll">
-                <!-- Left: Dual-Buffer Cinema Monitor -->
-                <div class="canon-monitor-card">
-                    <div class="dual-cinema-stage" id="canonDualStage">
-                        <div class="monitor-top-bar">
-                            <span class="monitor-pip-pill">
-                                <span class="stage-badge-dot"></span>
-                                <span>Dual-Buffer WebM Monitor</span>
-                            </span>
-                            <div class="flap-badge-wrap" style="margin:0;padding:0.28rem 0.55rem;">
-                                <div class="flaps" id="canonMonitorFlap" data-flap="LO-FI LOUNGE · IDLE" data-flap-manual></div>
-                            </div>
-                        </div>
-                        <video class="dual-cinema-video is-active" autoplay loop muted playsinline preload="metadata" poster="media/simone/lounge-idle.webp" src="media/simone/lounge-idle.webm"></video>
-                        <video class="dual-cinema-video" loop muted playsinline preload="metadata"></video>
-                    </div>
-
-                    <div class="monitor-controls">
-                        <div>
-                            <div class="control-group-row" style="margin-bottom:0.6rem;">
-                                <span class="control-group-label">States</span>
-                                <button type="button" class="canon-trigger-btn is-active" aria-pressed="true" data-canon-plate="lounge-idle">Idle · Host</button>
-                                <button type="button" class="canon-trigger-btn" aria-pressed="false" data-canon-plate="lounge-greet">Greet · Toast</button>
-                                <button type="button" class="canon-trigger-btn" aria-pressed="false" data-canon-plate="lounge-speaking">Speaking · Reply</button>
-                            </div>
-                            <div class="control-group-row">
-                                <span class="control-group-label">Worlds</span>
-                                <button type="button" class="canon-trigger-btn" aria-pressed="false" data-canon-plate="speakeasy">Noir Speakeasy</button>
-                                <button type="button" class="canon-trigger-btn" aria-pressed="false" data-canon-plate="jazz">UPA Jazz</button>
-                                <button type="button" class="canon-trigger-btn" aria-pressed="false" data-canon-plate="rooftop">Cel Rooftop</button>
-                                <button type="button" class="canon-trigger-btn" aria-pressed="false" data-canon-plate="dive">Risograph Dive</button>
-                            </div>
-                        </div>
-
-                        <div class="monitor-meta-line">
-                            <span id="canonMonitorTitle">The Host · Idle — Dark charcoal blazer over warm rust-gold silk camisole</span>
-                            <strong id="canonMonitorStyle">Lo-Fi Neon Anime</strong>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Right: Live Collectible Code 128 Set B Night Pass -->
-                <div class="night-pass-card">
-                    <div>
-                        <div class="pass-header">
-                            <div>
-                                <div class="pass-kicker">BAR DC · DIEGETIC ITINERARY ARTIFACT</div>
-                                <div class="pass-title" id="nightPassTitle">14TH &amp; U COCKTAIL PASS</div>
-                            </div>
-                            <span class="pass-serial" id="nightPassSerial">BDC-LNG904-3S</span>
-                        </div>
-
-                        <div class="pass-itinerary" id="nightPassStops"></div>
-                    </div>
-
-                    <div>
-                        <div class="pass-perforation" aria-hidden="true"></div>
-                        <div class="pass-footer">
-                            <div class="pass-barcode-box">
-                                <div id="nightPassBarcodeSvg"></div>
-                                <span class="pass-barcode-serial" id="nightPassBarcodeCode">BDC-LNG904-3S</span>
-                            </div>
-                            <a id="nightPassMapLink" href="https://bardc.com/map/#pass=jane-jane,service-bar,left-door" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Fly Route on 3D Map &nearr;</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Canonical Identity Anchor -->
-            <div class="identity-anchor-box animate-on-scroll">
-                <div class="identity-anchor-top">
-                    <span>01 · CANONICAL IDENTITY ANCHOR (LOCKED ACROSS ALL STYLES)</span>
-                    <button type="button" class="copy-btn" data-copy-target="simoneIdentityPrompt">Copy Identity Anchor</button>
-                </div>
-                <p id="simoneIdentityPrompt">Simone, a stylish charismatic African American woman in her late 20s with warm rich brown skin, expressive dark almond eyes, shoulder-length sculpted dark box braids with subtle warm amber highlights, and signature small gold hoop earrings</p>
-            </div>
-
-            <!-- Full 7-Plate Living Cinemagraph Gallery -->
-            <div class="canon-plates-subhead animate-on-scroll">
-                <h3>02 · All Seven Living Plates (Click Any Plate to Load Monitor)</h3>
-                <span>Batched Locally · ComfyUI Diffusion Stills &rarr; Looping VP9 WebM Cinemagraphs</span>
-            </div>
-
-            <div class="canon-plates-grid animate-on-scroll">
-                <!-- 1: lounge-idle -->
-                <article class="canon-plate-card is-selected" data-canon-plate="lounge-idle">
-                    <div class="canon-plate-viewport">
-                        <video loop muted playsinline preload="metadata" poster="media/simone/lounge-idle.webp">
-                            <source src="media/simone/lounge-idle.webm" type="video/webm">
-                        </video>
-                        <span class="canon-plate-style-badge">Lo-Fi Neon Anime</span>
-                        <span class="canon-plate-role-badge">State · Idle</span>
-                    </div>
-                    <div class="canon-plate-body">
-                        <span class="canon-plate-world">Cocktail Lounge (Default)</span>
-                        <h4>The Host · Idle</h4>
-                        <p class="canon-plate-meta"><strong>Wardrobe:</strong> Sleek dark charcoal tailored blazer over warm rust-gold silk camisole.</p>
-                        <p class="canon-plate-meta"><strong>Palette:</strong> Deep midnight plum, warm amber gold, neon rose magenta.</p>
-                    </div>
-                </article>
-
-                <!-- 2: lounge-greet -->
-                <article class="canon-plate-card" data-canon-plate="lounge-greet">
-                    <div class="canon-plate-viewport">
-                        <video loop muted playsinline preload="metadata" poster="media/simone/lounge-greet.webp">
-                            <source src="media/simone/lounge-greet.webm" type="video/webm">
-                        </video>
-                        <span class="canon-plate-style-badge">Lo-Fi Neon Anime</span>
-                        <span class="canon-plate-role-badge">State · Greet</span>
-                    </div>
-                    <div class="canon-plate-body">
-                        <span class="canon-plate-world">Cocktail Lounge (Greeting)</span>
-                        <h4>The Welcome · Greet</h4>
-                        <p class="canon-plate-meta"><strong>Motion:</strong> Raising a glowing amber coupe glass in a welcoming toast with gentle shimmer.</p>
-                        <p class="canon-plate-meta"><strong>Palette:</strong> Deep midnight plum, radiant amber gold, coral neon bokeh.</p>
-                    </div>
-                </article>
-
-                <!-- 3: lounge-speaking -->
-                <article class="canon-plate-card" data-canon-plate="lounge-speaking">
-                    <div class="canon-plate-viewport">
-                        <video loop muted playsinline preload="metadata" poster="media/simone/lounge-speaking.webp">
-                            <source src="media/simone/lounge-speaking.webm" type="video/webm">
-                        </video>
-                        <span class="canon-plate-style-badge">Lo-Fi Neon Anime</span>
-                        <span class="canon-plate-role-badge">State · Speaking</span>
-                    </div>
-                    <div class="canon-plate-body">
-                        <span class="canon-plate-world">Cocktail Lounge (Conversing)</span>
-                        <h4>The Recommendation · Speaking</h4>
-                        <p class="canon-plate-meta"><strong>Motion:</strong> Animated mid-sentence lip &amp; head movement while streaming concierge replies.</p>
-                        <p class="canon-plate-meta"><strong>Palette:</strong> Deep violet-black, warm amber, electric cyan &amp; magenta.</p>
-                    </div>
-                </article>
-
-                <!-- 4: speakeasy -->
-                <article class="canon-plate-card" data-canon-plate="speakeasy">
-                    <div class="canon-plate-viewport">
-                        <video loop muted playsinline preload="metadata" poster="media/simone/speakeasy.webp">
-                            <source src="media/simone/speakeasy.webm" type="video/webm">
-                        </video>
-                        <span class="canon-plate-style-badge">Noir Graphic Novel Ink</span>
-                        <span class="canon-plate-role-badge">World Skin</span>
-                    </div>
-                    <div class="canon-plate-body">
-                        <span class="canon-plate-world">Speakeasy &amp; Hidden Bars</span>
-                        <h4>Velvet &amp; Cipher</h4>
-                        <p class="canon-plate-meta"><strong>Wardrobe:</strong> Tailored midnight velvet lapel coat with smoked old fashioned &amp; rising smoke wisp.</p>
-                        <p class="canon-plate-meta"><strong>Palette:</strong> Ink black, burnished brass gold, deep crimson velvet.</p>
-                    </div>
-                </article>
-
-                <!-- 5: jazz -->
-                <article class="canon-plate-card" data-canon-plate="jazz">
-                    <div class="canon-plate-viewport">
-                        <video loop muted playsinline preload="metadata" poster="media/simone/jazz.webp">
-                            <source src="media/simone/jazz.webm" type="video/webm">
-                        </video>
-                        <span class="canon-plate-style-badge">Mid-Century UPA Gouache</span>
-                        <span class="canon-plate-role-badge">World Skin</span>
-                    </div>
-                    <div class="canon-plate-body">
-                        <span class="canon-plate-world">Jazz &amp; Live Music</span>
-                        <h4>Brass on U Street</h4>
-                        <p class="canon-plate-meta"><strong>Wardrobe:</strong> Chic black knit turtleneck framed by angular brass horn players &amp; stage beams.</p>
-                        <p class="canon-plate-meta"><strong>Palette:</strong> Burnt sienna, indigo night, warm brass gold, cream gouache.</p>
-                    </div>
-                </article>
-
-                <!-- 6: rooftop -->
-                <article class="canon-plate-card" data-canon-plate="rooftop">
-                    <div class="canon-plate-viewport">
-                        <video loop muted playsinline preload="metadata" poster="media/simone/rooftop.webp">
-                            <source src="media/simone/rooftop.webm" type="video/webm">
-                        </video>
-                        <span class="canon-plate-style-badge">Modern Cel-Shaded</span>
-                        <span class="canon-plate-role-badge">World Skin</span>
-                    </div>
-                    <div class="canon-plate-body">
-                        <span class="canon-plate-world">Rooftops &amp; Patios</span>
-                        <h4>Golden Hour Horizon</h4>
-                        <p class="canon-plate-meta"><strong>Wardrobe:</strong> Effortless cream linen blazer over terracotta top beneath twinkling string lights.</p>
-                        <p class="canon-plate-meta"><strong>Palette:</strong> Twilight cyan, sunset coral, string-light gold, deep indigo.</p>
-                    </div>
-                </article>
-
-                <!-- 7: dive -->
-                <article class="canon-plate-card" data-canon-plate="dive">
-                    <div class="canon-plate-viewport">
-                        <video loop muted playsinline preload="metadata" poster="media/simone/dive.webp">
-                            <source src="media/simone/dive.webm" type="video/webm">
-                        </video>
-                        <span class="canon-plate-style-badge">Risograph Gig Poster</span>
-                        <span class="canon-plate-role-badge">World Skin</span>
-                    </div>
-                    <div class="canon-plate-body">
-                        <span class="canon-plate-world">Dive Bars &amp; Late Night</span>
-                        <h4>Last Call Jukebox</h4>
-                        <p class="canon-plate-meta"><strong>Wardrobe:</strong> Cool vintage moto jacket leaning beside a pulsing neon jukebox in Adams Morgan.</p>
-                        <p class="canon-plate-meta"><strong>Palette:</strong> Fluorescent risograph pink, electric teal, warm mustard overprint.</p>
-                    </div>
-                </article>
-            </div>
-
-            <!-- 03 · Embodied UX Capabilities -->
-            <div class="canon-ux-grid animate-on-scroll">
-                <div class="arch-plane">
-                    <span class="plane-badge">Diegetic World Skins</span>
-                    <h3>Page-Aware Visual Chameleon</h3>
-                    <p>Navigating into Speakeasies, Rooftops, Jazz, or Dive Bars shifts both Simone's floating PiP monitor and the page's own diegetic styling — from double-brass speakeasy frames to risograph halftone textures.</p>
-                </div>
-                <div class="arch-plane">
-                    <span class="plane-badge">Spatial Page &amp; Map Co-Pilot</span>
-                    <h3>Live DOM Spotlights &amp; 3D Flights</h3>
-                    <p>Simone reads venue cards rendered on the current page, physically ribbons her top picks right on the grid behind chat, or dispatches <code>simone:fly-pass</code> to fly the 3D DC map along your route.</p>
-                </div>
-                <div class="arch-plane">
-                    <span class="plane-badge cloud">Dual-Mode Social</span>
-                    <h3>1-on-1 Concierge + Live Room Chat</h3>
-                    <p>Visitors can ask Simone privately with zero sign-in friction, or flip into room-scoped Firestore threads (venue, neighborhood, or vibe rooms) to swap plans and summon <code>@simone</code> live.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Hybrid Architecture Section -->
-    <section id="architecture" class="section section-alt">
+    <section id="architecture" class="section">
         <div class="container">
             <div class="section-header animate-on-scroll">
                 <div class="eyebrow">Hybrid Infrastructure</div>
@@ -908,7 +594,7 @@
     </section>
 
     <!-- Products & Upcoming Roadmap Section -->
-    <section id="projects" class="section">
+    <section id="projects" class="section section-alt">
         <div class="container">
             <div class="section-header animate-on-scroll">
                 <div class="eyebrow">Portfolio &amp; Roadmap</div>
@@ -929,7 +615,7 @@
                         <span>Live in Production · bardc.com</span>
                     </span>
                     <h3>Bar DC</h3>
-                    <p>Washington, D.C.'s self-updating bars, happy hours, and nightlife platform. Autonomous agents powered by SOTA local and cloud multimodal models (including <strong>Inkling</strong>, <strong>Gemma</strong>, and <strong>Gemini</strong>) crawl and verify 636+ indexed listings nightly, moderate venue hero photography, illustrate daily dispatches &amp; cinemagraphs via ComfyUI, and guide visitors with Simone, our embodied multi-world concierge.</p>
+                    <p>Washington, D.C.'s self-updating bars, happy hours, and nightlife platform. Autonomous agents powered by SOTA local and cloud multimodal models (including <strong>Inkling</strong>, <strong>Gemma</strong>, and <strong>Gemini</strong>) crawl and verify 636+ indexed listings nightly, moderate venue hero photography, illustrate daily dispatches &amp; cinemagraphs via ComfyUI, and power live 3D maps &amp; AI-ready feeds.</p>
 
                     <div class="flagship-stats">
                         <div>
@@ -949,7 +635,6 @@
                     <div class="flagship-actions">
                         <a href="https://bardc.com" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Visit bardc.com &rarr;</a>
                         <a href="https://bardc.com/map/" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">3D &amp; Live Deal Map &nearr;</a>
-                        <a href="#simone" class="btn btn-secondary btn-sm">Simone Canon &uarr;</a>
                     </div>
                 </div>
             </article>
@@ -999,7 +684,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="section section-alt">
+    <section id="contact" class="section">
         <div class="container">
             <div class="contact-card animate-on-scroll">
                 <div class="eyebrow">Work With Us</div>
@@ -1027,7 +712,6 @@
             </div>
             <div class="footer-links">
                 <a href="#tour">Tech Tour</a>
-                <a href="#simone">Simone Canon</a>
                 <a href="#architecture">Architecture</a>
                 <a href="https://bardc.com" target="_blank" rel="noopener">BarDC</a>
                 <a href="#contact">Contact</a>
