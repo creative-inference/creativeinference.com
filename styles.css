@@ -1926,6 +1926,17 @@ p code, li code {
     font-size: 0.9rem;
 }
 
+.footer-legal {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+}
+
+.footer-trademark {
+    font-size: 0.78rem;
+    opacity: 0.8;
+}
+
 .footer-logo {
     width: 30px;
     height: 30px;
